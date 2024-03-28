@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Oooh+Baby&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Oooh+Baby&display=swap");
 
 .font-baby {
   font-family: "Oooh Baby", cursive;
@@ -29,159 +29,178 @@
 }
 
 .font-120 {
-	font-size: 120px;
+  align-self: flex-start;
+  font-size: 120px;
 }
 .font-40 {
-	font-size: 40px;
+  font-size: 40px;
 }
 .font-30 {
-	font-size: 30px;
+  font-size: 30px;
 }
 .font-19 {
-	font-size: 19px;
+  width: 80%;
+  font-size: 19px;
 }
 
 .gap-40 {
-	gap: 40px;
+  gap: 40px;
 }
 .gap-100 {
-	gap: 100px;
+  gap: 100px;
 }
 
 .margin-top {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .margin-bottom {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .clickable {
-	transition: all 0.3s;
-	cursor: pointer;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.clickable:hover{
-	opacity: 50%;
+.clickable:hover {
+  opacity: 50%;
 }
 
 .align-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .align-right {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	text-align: right;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 body {
-	width: 100%;
-	height: fit-content;
+  width: 100%;
+  height: fit-content;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	gap: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
 
-	margin: 0px;
-	padding: 100px 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 100px 0px;
+  box-sizing: border-box;
 
-	background-color: white;
-	color: black;
-	overflow-x: hidden;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
 }
 
 .row-container {
-	width: 100%;
-	height: fit-content;
+  width: 100%;
+  height: fit-content;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .row-container.end {
-	justify-content: flex-end;
-	gap: 20px;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .col-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 }
-.col-container.white{
-	padding: 0 300px;
-	box-sizing: border-box;
+.col-container.white {
+  width: 100%;
+  box-sizing: border-box;
 }
 .col-container.black {
-	background-color: #282828;
-	color: white;
+  width: 100%;
+  background-color: #282828;
+  color: white;
+  padding: 150px 0px;
+  box-sizing: border-box;
 
-	padding: 150px 300px;
-	box-sizing: border-box;
+  align-items: center;
+}
+.grid-wrapper {
+  width: 70%;
+  min-width: 800px;
 
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .img-container {
-	width: fit-content;
-	height: fit-content;
-	position: relative;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .img-container.thirty {
-	width: 33%;
+  width: 33%;
 }
 .img-container.fourty {
-	width: 45%;
+  width: 45%;
 }
 .img-container.sixty {
-	width: 66%;
+  width: 66%;
 }
 
 .img-fill {
-	width: 100%;
-	object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 .img-fill.perfect {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .img-fill.scroll {
-	width: fit-content;
-	height: 100%;
+  width: fit-content;
+  height: 100%;
 }
 .img-caption {
-	position: absolute;
-	bottom: -25px;
-
+  position: absolute;
+  bottom: -25px;
 }
 
 .img-scroller {
-	align-self: center;
-	width: 800px;
-	height: 450px;
-	background-color: #222222;
+  align-self: center;
+  width: 100%;
+  height: 450px;
+  background-color: #222222;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 
-	overflow-x: auto;
+  overflow-x: auto;
 }
 .img-scroll-item {
-	width: fit-content;
-	height: 80%;
-	position: relative;
+  width: fit-content;
+  height: 80%;
+  position: relative;
+}
+.portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -195,4 +214,104 @@ body {
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
+}
+
+@media (width <= 1000px) {
+  body {
+    padding: 70px 0px;
+    gap: 30px;
+  }
+  .font-19 {
+    font-size: 15px;
+  }
+  .font-120 {
+    font-size: 6rem;
+    line-height: 0.8;
+    margin-bottom: 15px;
+  }
+  .font-caption {
+    font-size: 13px;
+  }
+  .portrait {
+    height: 600px;
+  }
+  .grid-wrapper {
+    width: 80%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .row-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .row-container.end {
+    justify-content: center;
+    gap: 50px;
+  }
+  .img-container.sixty {
+    width: 100%;
+  }
+  .img-container.thirty {
+    width: 100%;
+  }
+  .img-container.fourty {
+    width: 100%;
+  }
+  .col-container.black {
+    padding: 80px 0;
+  }
+  .gap-40 {
+    gap: 30px;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (width <= 600px) {
+  body {
+    padding: 50px 0px;
+    gap: 20px;
+  }
+  .gap-40 {
+    gap: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .portrait {
+    height: 400px;
+  }
+  .col-container.black {
+    padding: 70px 0;
+    gap: 80px;
+  }
+  .img-scroller {
+    height: 300px;
+  }
+  .row-container {
+    gap: 25px;
+  }
+  .font-19 {
+    font-size: 13px;
+  }
+  .font-30 {
+    font-size: 20px;
+  }
+  .font-40 {
+    font-size: 30px;
+  }
+  .font-120 {
+    font-size: 4rem;
+  }
+  .font-caption {
+    font-size: 10px;
+  }
+  .img-caption {
+    bottom: -12px;
+  }
 }
